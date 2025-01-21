@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Jellyfin | Pocket ID</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://stonith404.github.io/pocket-id/img/pocket-id.png"><meta data-rh="true" name="twitter:image" content="https://stonith404.github.io/pocket-id/img/pocket-id.png"><meta data-rh="true" property="og:url" content="https://stonith404.github.io/pocket-id/client-examples/jellyfin"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Jellyfin | Pocket ID"><meta data-rh="true" name="description" content="Due to the current limitations of the Jellyfin SSO plugin, this integration will only work in a browser. When tested, the Jellyfin app did not work and displayed an error, even when custom menu buttons were created."><meta data-rh="true" property="og:description" content="Due to the current limitations of the Jellyfin SSO plugin, this integration will only work in a browser. When tested, the Jellyfin app did not work and displayed an error, even when custom menu buttons were created."><link data-rh="true" rel="icon" href="/pocket-id/img/pocket-id.png"><link data-rh="true" rel="canonical" href="https://stonith404.github.io/pocket-id/client-examples/jellyfin"><link data-rh="true" rel="alternate" href="https://stonith404.github.io/pocket-id/client-examples/jellyfin" hreflang="en"><link data-rh="true" rel="alternate" href="https://stonith404.github.io/pocket-id/client-examples/jellyfin" hreflang="x-default"><link rel="stylesheet" href="/pocket-id/assets/css/styles.76118980.css">
-<script src="/pocket-id/assets/js/runtime~main.bbcff829.js" defer="defer"></script>
+<script src="/pocket-id/assets/js/runtime~main.a2ed1d31.js" defer="defer"></script>
 <script src="/pocket-id/assets/js/main.512c51f5.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -39,11 +39,11 @@
 <li>Enter the <i>OID Provider Name (we used &quot;test_resource&quot; as our name in the callback URL), Open ID, OID Secret, and mark it as enabled.</i></li>
 <li>The following steps are optional based on your needs. In this guide, we’ll be managing only regular users, not admins.</li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="img.png" src="/pocket-id/assets/images/jelly_fin_img-2729fb06cd4e1d0462c846a4d0045575.png" width="805" height="564" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="img.png" src="/pocket-id/assets/images/jellyfin_img-2729fb06cd4e1d0462c846a4d0045575.png" width="805" height="564" class="img_ev3q"></p>
 <blockquote>
 <p>To manage user access through groups, follow steps <strong>4, 5, and 6</strong>. Otherwise, leave it blank and skip to step 7.</p>
 </blockquote>
-<p><img decoding="async" loading="lazy" alt="img2.png" src="/pocket-id/assets/images/jelly_fin_img2-7a65301f97b819847beaf0c0b63ec1df.png" width="653" height="727" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="img2.png" src="/pocket-id/assets/images/jellyfin_img2-7a65301f97b819847beaf0c0b63ec1df.png" width="653" height="727" class="img_ev3q"></p>
 <ol start="4">
 <li>Under <i>Roles</i>, type the name of the group you want to use. <strong>Note:</strong> This must be the group name, not the label. Double-check in Pocket ID, as an incorrect name will lock users out.</li>
 <li>Skip every field until you reach the <strong>Role Claim</strong> field, and type <code>groups</code>.<!-- -->
@@ -53,7 +53,7 @@
 </li>
 <li>Repeat the above step under <strong>Request Additional Scopes</strong>. This will pull the group scope during the sign-in process; otherwise, the previous steps won’t work.</li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="img3.png" src="/pocket-id/assets/images/jelly_fin_img3-c6bee171e477b3b0e1037daaf8f12717.png" width="641" height="323" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="img3.png" src="/pocket-id/assets/images/jellyfin_img3-c6bee171e477b3b0e1037daaf8f12717.png" width="641" height="323" class="img_ev3q"></p>
 <ol start="7">
 <li>Skip the remaining fields until you reach <strong>Scheme Override</strong>. Enter <code>https</code> here. If omitted, it will attempt to use HTTP first, which will break as WebAuthn requires an HTTPS connection.</li>
 <li>Click <strong>Save</strong> and restart Jellyfin.</li>
