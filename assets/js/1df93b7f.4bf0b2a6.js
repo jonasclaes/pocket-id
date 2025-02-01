@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpocket_id_docs=self.webpackChunkpocket_id_docs||[]).push([[583],{6107:(t,c,e)=>{e.r(c),e.d(c,{default:()=>s});var d=e(6347),o=e(4848);function s(){return(0,o.jsx)(d.rd,{to:"/pocket-id/introduction"})}}}]);
